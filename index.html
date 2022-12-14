@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" id="main">
+    <div class="left-balance">
+        <img ondragstart="drag(event, 'g_left')" class="apple" src="./images/slice.png" alt="50">
+        <img ondragstart="drag(event, 'g_left')" class="apple" src="./images/half.png" alt="200">
+        <img ondragstart="drag(event, 'g_left')" class="apple" src="./images/apple.png" alt="400">
+    </div>
+    <div class="balance_bang">
+        <div ondrop="drop(event, 'cart_left')" ondragover="allowDrop(event)" class="graphic g_left"></div>
+        <div class="cart cart_left" id="cart_left">
+            <!--            <img class="apple" src="./images/apple.png" alt="">-->
+            <!--            <img class="apple" src="./images/apple.png" alt="">-->
+            <!--            <img class="apple" src="./images/apple.png" alt="">-->
+        </div>
+        <img id="balance" class="balance" src="images/bang.png" alt="">
+        <div class="cart cart_right" id="cart_right">
+            <!--            <img class="apple" src="./images/apple.png" alt="">-->
+            <!--            <img class="apple" src="./images/apple.png" alt="">-->
+            <!--            <img class="apple" src="./images/apple.png" alt="">-->
+        </div>
+        <div ondrop="drop(event, 'cart_right')" ondragover="allowDrop(event)" class="graphic g_right"></div>
+    </div>
+    <!--    <img class="be" src="images/khongbang.png" alt="">-->
+    <!--    <img class="lon" src="images/khongbang.png" alt="">-->
+    <div class="right-balance">
+        <img ondragstart="drag(event, 'g_right')" class="apple" src="./images/slice.png" alt="50">
+        <img ondragstart="drag(event, 'g_right')" class="apple" src="./images/half.png" alt="200">
+        <img ondragstart="drag(event, 'g_right')" class="apple" src="./images/apple.png" alt="400">
+    </div>
+</div>
+<div class="scrore">
+    <h3 id="scrore_left">Cân trái: 0g</h3>
+    <button type="button" class="refresh" id="btn_refresh">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+             class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+        </svg>
+        <br>
+        Làm mới
+    </button>
+    <h3 id="score_right">Cân phải: 0g</h3>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

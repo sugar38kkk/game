@@ -1,0 +1,128 @@
+body {
+    background-color: #241E48;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-balance, .right-balance {
+    padding-top: 300px;
+}
+
+img.bang, img.be, img.lon {
+    width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+
+.behon img.balance {
+    transform: rotateY(180deg);
+}
+
+img.apple {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.balance_bang {
+    width: 700px;
+    position: relative;
+    margin-top: 150px;
+}
+
+.cart_left {
+    width: 200px;
+    display: flex;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.cart_right {
+    width: 200px;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.cart img.apple {
+    width: 40px;
+    margin-right: -20px;
+    margin-bottom: -15px;
+    height: 40px;
+    margin-top: auto;
+}
+
+.cart img.bag {
+    width: 70px;
+    margin-right: -20px;
+    margin-bottom: -35px;
+}
+
+.graphic {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    z-index: 999;
+}
+
+.g_left {
+    left: 60px;
+    bottom: 85px;
+}
+
+.g_right {
+    right: 40px;
+    bottom: 85px;
+}
+
+.graphic.drag {
+    border: 2px #cccccc dotted;
+}
+
+.behon .g_right, .behon .cart_right {
+    transform: rotate(10deg) translateY(30px);
+}
+
+.behon .g_left, .behon .cart_left {
+    transform: rotate(10deg) translateY(-15px);
+}
+
+.lonhon .g_left, .lonhon .cart_left {
+    transform: rotate(350deg) translateY(25px);
+}
+
+.lonhon .g_right, .lonhon .cart_right {
+    transform: rotate(350deg) translateY(-25px);
+}
+
+img.balance {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.scrore {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 200px;
+    box-sizing: border-box;
+}
+
+.scrore h3 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.refresh {
+    height: 80px;
+    cursor: pointer;
+}
