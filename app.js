@@ -78,9 +78,16 @@ function drop(event, p) {
     const container = document.getElementById('main')
     const balance = document.getElementById('balance')
 
-    document.getElementById('scrore_left').textContent = `Cân trái: ${weight.cart_left}g`
-    document.getElementById('score_right').textContent = `Cân phải: ${weight.cart_right}g`
-    console.log(weight)
+    if (weight.cart_left / 1000 >= 1){
+        document.getElementById('scrore_left').textContent = `Cân trái: ${weight.cart_left / 1000}kg`
+    }else{
+        document.getElementById('scrore_left').textContent = `Cân trái: ${weight.cart_left}g`
+    }
+    if (weight.cart_right / 1000 >= 1){
+        document.getElementById('score_right').textContent = `Cân phải: ${weight.cart_right /1000}kg`
+    }else{
+        document.getElementById('score_right').textContent = `Cân phải: ${weight.cart_right}g`
+    }
     if (weight.cart_left > weight.cart_right) {
         container.className = 'container lonhon'
         balance.src = 'images/khongbang.png'
