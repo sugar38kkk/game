@@ -37,7 +37,7 @@ img.apple {
     width: 200px;
     display: flex;
     position: absolute;
-    left: 50px;
+    left: 70px;
     bottom: 100px;
     flex-wrap: wrap;
 }
@@ -46,9 +46,10 @@ img.apple {
     width: 200px;
     display: flex;
     position: absolute;
-    right: 50px;
+    right: 90px;
     bottom: 100px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .cart img.apple {
